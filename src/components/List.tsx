@@ -85,16 +85,16 @@ const List = () => {
             {state?.products.map((item: any) => {
                 return <div key={item.id}>{item.name}</div>;
             })}
-            <button className="border bg-green-500 p-2" onClick={() => addProduct({ name: "test" })}>
+            <button className="border bg-blue-500 p-2" onClick={() => addProduct({ name: "test" })}>
                 Add Product
             </button>
             <button
-                className="border bg-green-500 p-2"
-                onClick={() => updateProduct({ name: "test updated", id: 3 })}
+                className="border bg-blue-500 p-2"
+                onClick={() => updateProduct({ name: "test updated", id: 4 })}
             >
                 Update Product
             </button>
-            <button className="border bg-green-500 p-2" onClick={() => deleteProduct(3)}>
+            <button className="border bg-blue-500 p-2" onClick={() => deleteProduct(4)}>
                 Delete Product
             </button>
         </div>
