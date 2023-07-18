@@ -22,13 +22,9 @@ export default Counter; */
 
 import { useDispatch, useSelector } from "react-redux";
 const Counter = () => {
-    // const { state, dispatch } = useContext(CounterContext);
-    // console.log(state); // { count: 0}
-
-    // const counter = useSelector((state) => {count: 0});
-    const { count } = useSelector((state: any) => state);
+    // const { count } = useSelector((state: any) => { counter: { count: 0} });
+    const { count } = useSelector((state: any) => state.counter);
     const dispatch = useDispatch();
-
     return (
         <div>
             Counter {count}
